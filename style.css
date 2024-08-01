@@ -17,3 +17,36 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	color: var(--dark-grayish-blue);
+}
+
+.catelog {
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+h3 {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.price {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	font-size: 2em;
+	color: var(--dark-cyan);
+}
+
+.cancelled {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	color: var(--dark-grayish-blue);
+	text-decoration: line-through;
+}
