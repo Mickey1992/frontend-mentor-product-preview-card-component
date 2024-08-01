@@ -50,3 +50,12 @@ h3 {
 	color: var(--dark-grayish-blue);
 	text-decoration: line-through;
 }
+
+button {
+	background-color: var(--dark-cyan);
+	color: var(--white);
+}
+
+button:active {
+	background-color: var(--very-dark-blue);
+}
