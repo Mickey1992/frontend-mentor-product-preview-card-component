@@ -1,21 +1,54 @@
 :root {
 	--dark-cyan: hsl(158, 36%, 37%);
+	--dark-cyan-hovered: hsl(158, 36%, 20%);
 	--cream: hsl(30, 38%, 92%);
 	--very-dark-blue: hsl(212, 21%, 14%);
 	--dark-grayish-blue: hsl(228, 12%, 48%);
 	--white: hsl(0, 0%, 100%);
 
+	--card-width: 25em;
+	--card-height: 45em;
+
 	font-size: 14px;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
 	box-sizing: border-box;
 }
 
 body {
 	background-color: var(--cream);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .media-box {
 	display: flex;
 	flex-direction: column;
+	width: var(--card-width);
+	height: var(--card-height);
+	background-color: var(--white);
+	border-radius: 1em;
+}
+
+.media-img {
+	width: 100%;
+	height: fit-content;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.media-body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 2em;
+	justify-content: space-around;
 }
 
 p {
@@ -27,13 +60,14 @@ p {
 
 .catelog {
 	text-transform: uppercase;
-	letter-spacing: 0.5em;
+	letter-spacing: 0.4em;
 }
 
 h3 {
 	font-family: "Fraunces", serif;
 	font-weight: 700;
 	font-size: 2em;
+	color: var(--very-dark-blue);
 }
 
 .price {
@@ -43,19 +77,24 @@ h3 {
 	color: var(--dark-cyan);
 }
 
-.cancelled {
+.price > .cancelled {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 1rem;
 	color: var(--dark-grayish-blue);
 	text-decoration: line-through;
+	margin-left: 1rem;
 }
 
 button {
 	background-color: var(--dark-cyan);
 	color: var(--white);
+	width: 100%;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	border-color: transparent;
 }
 
 button:active {
-	background-color: var(--very-dark-blue);
+	background-color: var(--dark-cyan-hovered);
 }
